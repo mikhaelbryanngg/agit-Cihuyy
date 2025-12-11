@@ -1,0 +1,91 @@
+/* Styling Keseluruhan - Hitam Putih dan Elegan */
+body {
+    background-color: #f0f0f0; /* Putih Gading / Abu-abu muda */
+    color: #333; /* Hitam Pudar */
+    font-family: 'Georgia', serif; /* Font klasik/elegan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Tampilan Awal: Tombol --- */
+#startButton {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#startButton:hover {
+    background-color: #333;
+    color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Kertas Vintage --- */
+.vintage-paper {
+    background-color: #fffffa; /* Putih sedikit hangat */
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    line-height: 1.8;
+    text-align: left;
+    white-space: pre-wrap; /* Penting untuk menjaga baris baru dari pesan */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Font Ketik Vintage */
+#typing-text {
+    font-family: 'Courier New', monospace; /* Font mesin ketik */
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Animasi Ketik (Cursor yang Berkedip) */
+#typing-text::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+/* --- Teks Penutup --- */
+.closing-text {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    /* Efek sedikit terkesan tulisan tangan */
+    font-family: 'Permanent Marker', cursive; /* Anda bisa mencoba font ini jika terhubung ke Google Fonts */
+    /* Untuk tampilan ini, kita pakai font standar yang mirip */
+    font-family: 'Arial Black', sans-serif;
+}
